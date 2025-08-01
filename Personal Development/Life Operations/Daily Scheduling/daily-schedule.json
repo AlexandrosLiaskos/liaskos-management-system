@@ -1,0 +1,166 @@
+{
+  "id": "daily-schedule",
+  "type": "daily_schedule",
+  "title": "Daily Optimization Schedule",
+  "status": "active",
+  "priority": "critical",
+  "date": "2025-07-30",
+  "sleepHours": 5.5,
+  "workHours": 15,
+  "timeSlots": [
+    {
+      "id": "wake-routine",
+      "startTime": "07:00",
+      "endTime": "07:15",
+      "duration": 15,
+      "title": "Wake-up Routine",
+      "description": "Hydration, hygiene, room tidying",
+      "category": "hygiene",
+      "priority": "high"
+    },
+    {
+      "id": "cardio-training",
+      "startTime": "07:15",
+      "endTime": "07:45",
+      "duration": 30,
+      "title": "Cardio Training",
+      "description": "Stretching, Running/Cardio training",
+      "category": "fitness",
+      "priority": "medium"
+    },
+    {
+      "id": "strength-training",
+      "startTime": "07:45",
+      "endTime": "08:00",
+      "duration": 15,
+      "title": "Strength Training",
+      "description": "Calisthenics training",
+      "category": "fitness",
+      "priority": "medium",
+      "focus": "fitness"
+    },
+    {
+      "id": "morning-shower",
+      "startTime": "08:00",
+      "endTime": "08:15",
+      "duration": 15,
+      "title": "Shower",
+      "description": "Post-workout hygiene",
+      "priority": "high",
+      "category": "hygiene",
+      "focus": "recovery"
+    },
+    {
+      "id": "meditation",
+      "startTime": "08:15",
+      "endTime": "08:30",
+      "duration": 15,
+      "title": "Meditation",
+      "description": "Mental preparation and mindfulness",
+      "category": "mental",
+      "priority": "medium"
+    },
+    {
+      "id": "commute-primary",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "duration": 30,
+      "title": "Drive to Work",
+      "description": "Commute to research/software engineering job",
+      "category": "transportation",
+      "priority": "critical"
+    },
+    {
+      "id": "deep-work-morning",
+      "startTime": "09:00",
+      "endTime": "12:00",
+      "duration": 180,
+      "title": "Deep Work Session 1",
+      "description": "Primary research/software engineering work",
+      "category": "work",
+      "priority": "critical"
+    },
+    {
+      "id": "lunch-break",
+      "startTime": "12:00",
+      "endTime": "12:15",
+      "duration": 15,
+      "title": "Lunch Break",
+      "description": "Quick nutrition break",
+      "category": "food",
+      "priority": "medium"
+    },
+    {
+      "id": "deep-work-afternoon",
+      "startTime": "12:15",
+      "endTime": "15:15",
+      "duration": 180,
+      "title": "Deep Work Session 2",
+      "description": "Continued research/software engineering work",
+      "category": "work",
+      "priority": "critical"
+    },
+    {
+      "id": "commute-secondary",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "duration": 30,
+      "title": "Drive to Second Job",
+      "description": "Transition to waiter position",
+      "category": "transportation",
+      "priority": "high"
+    },
+    {
+      "id": "waiter-shift",
+      "startTime": "16:00",
+      "endTime": "01:00",
+      "duration": 540,
+      "title": "Waiter Shift + Planning",
+      "description": "Restaurant service + planning upcoming operations during breaks",
+      "category": "work",
+      "priority": "critical"
+    },
+    {
+      "id": "night-shower",
+      "startTime": "01:00",
+      "endTime": "01:15",
+      "duration": 15,
+      "title": "Night Shower",
+      "description": "Post-work hygiene",
+      "category": "hygiene",
+      "priority": "high"
+    },
+    {
+      "id": "night-routine",
+      "startTime": "01:15",
+      "endTime": "01:30",
+      "duration": 15,
+      "title": "Night Routine",
+      "description": "Hygiene, room tidying, preparation for sleep",
+      "category": "hygiene",
+      "priority": "high"
+    },
+    {
+      "id": "sleep",
+      "startTime": "01:30",
+      "endTime": "07:00",
+      "duration": 330,
+      "title": "Sleep",
+      "description": "Recovery and regeneration (5.5 hours)",
+      "category": "sleep",
+      "priority": "critical"
+    }
+  ],
+  "risks": [
+    "Sleep deprivation may impact cognitive performance",
+    "High workload (15 hours) requires careful energy management",
+    "Limited buffer time for unexpected delays"
+  ],
+  "derived": {
+    "totalPlannedMinutes": 1410,
+    "sleepDebtFlag": true,
+    "bufferRiskFlag": true,
+    "commuteTightness": "moderate",
+    "workMinutesPlanned": 900
+  }
+}
